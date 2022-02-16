@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+nav{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    position: fixed !important;
+    width: 100%;
+    font-weight: 300;
+}
+
+nav a:hover{
+    color: black;
+}
+
+.navbar-brand{
+    font-size: 1.3em !important;
+    font-weight: 300;
+}
+.navbar-toggler{
+    border: none !important;
+}
+
+button:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+#icons{
+    
+    font-size: 1.5em;
+}
+
+#icons a{
+    text-decoration: none;
+    color: rgba(0,0,0,.55);
+}
+
+#icons a:visited{
+    text-decoration: none;
+    color: rgba(0,0,0,.55);
+}
+
+.bi:hover{
+    color: rgba(0, 0, 0, 1);
+    opacity: 1;
+}
+
+/* -----------------------HERO-------------------------- */
+
+#hero{
+    height: 100vh;
+    background-image: url("hero2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero h1{
+    font-size: 5rem;
+    padding: 0 0 1rem 0;
+    text-transform: uppercase;
+}
+
+.parallax {
+
+    
+    height: 100%;
+    width: 100%;
+    
+  }
+
+#line{
+    width: 60%;
+    height: 0.3em;
+    border-radius: 50%;
+    color: black;
+    opacity: 1;
+}
