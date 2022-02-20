@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Selfie Box</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div id="navcont" class="container">
-            <a class="navbar-brand me-5" href="#">Neve..</a>
+            <a class="navbar-brand me-5" href="#">Selfie-Box</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -33,51 +34,95 @@
                     </li>
                 </ul>
                 <div id="icons">
-                    <a class="me-3" href="https://www.instagram.com/">
+                    <a target="blank" class="me-3" href="https://www.facebook.com/">
                         <i class="bi bi-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com/">
+                    <a target="blank" href="https://www.instagram.com/">
                         <i class="bi bi-instagram"></i>
                     </a>
                 </div>
             </div>
         </div>
     </nav>
-    <section id="hero" class="d-flex justify-content-center align-items-center flex-column">
+    <section id="hero" class=" d-flex justify-content-center align-items-center flex-column">
 
-        <h1>Szelfi box</h1>
+        <h1>Selfie-Box</h1>
         <hr id="line">
-        <h3>Lorem ipsum dolor sit amet.</h3>
-    </section>
-    <section id="" class="container d-flex justify-content-center align-items-center flex-column">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-              </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./carusel/pic1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./carusel/pic2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./carusel/pic3.jpg" class="d-block w-100" alt="....">
-              </div>
-            </div>
-          
+        <div class="container">
+            <h3>
+                <span class="quote">"</span> Különös dolog a fénykép:<br>Mindig jelen időben van, mindenkit egyetlen pillanatban ábrázol, és az a
+                pillanat soha többé nem jön el. <br>Az utókor számára készítjük, és miközben villan a zár, önmagunk
+                jövőbeni
+                változatára gondolunk, amint visszatekint erre az eseményre.<span class="quote">"</span>
+            </h3>
+            <h2>
+                Natasha Solomons
+            </h2>
         </div>
     </section>
+    <section class="container-flud">
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="overlay-image" style="background-image: url(./carusel/pic1.jpg);"></div>
+                    <div class="container">
+                        <p>Különös dolog a fénykép: mindig jelen időben van, mindenkit egyetlen pillanatban ábrázol, és
+                            az a pillanat soha többé nem jön el. Az utókor számára készítjük, és miközben villan a zár,
+                            önmagunk jövőbeni változatára gondolunk, amint visszatekint erre az eseményre.
+                             
+                        </p>
+                        <h1>Natasha Solomons</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image" style="background-image: url(./carusel/pic2.jpg);"></div>
+                    <div class="container">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius similique corporis soluta
+                            rerum.
+                        </p>
+                        <h1>Lorem2, ipsum dolor.</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image" style="background-image: url(./carusel/pic3.jpg);"></div>
+                    <div class="container">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius similique corporis soluta
+                            rerum.
+                        </p>
+                        <h1>Lorem3, ipsum dolor.</h1>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a> -->
+
+        </div>
+
+    </section>
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
     <script src="./app.js"></script>
 </body>
 
