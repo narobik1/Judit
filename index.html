@@ -118,34 +118,36 @@
     <section id="csomagok" class="container my-5">
 
         <div class="row my-5">
-            <div class="col-sm-4">
+            <div class="col-sm-4 my-5">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Mini csomag</h5>
-                        <p class="card-text">Korlátlan fotókészítés</p>
-                        <label id="minilable" for="minihour">1 óra</label><br>
+                        <p class="card-text">Korlátlan fotókészítés<br>&nbsp;</p>
+                        <label id="minilabel" for="minihour" class="price">1 óra</label><br>
                         <input type="range" id="minihour" name="mini" min="1" max="2" step="0.5" value="1">
+                        <p id="miniprice" class="price card-text">29.900 Ft</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 my-5">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Midi csomag</h5>
                         <p class="card-text">Korlátlan fotókészítés, ajándék vendégkönyv</p>
-                        <label id="midilabel" for="midihour">3 óra</label><br>
-                        <input type="range" id="midihour" name="midi" min="3" max="5">
-                        <p class="card-text">59.900 Ft</p>
+                        <label id="midilabel" for="midihour" class="price" >3 óra</label><br>
+                        <input type="range" id="midihour" name="midi" min="3" max="5" value="3">
+                        <p id="midiprice" class="price card-text">59.900 Ft</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 my-5">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Midi csomag</h5>
+                        <h5 class="card-title">Maxi king csomag</h5>
                         <p class="card-text">Korlátlan fotókészítés, ajándék vendégkönyv</p>
-                        <label id="maxilabel" for="maxihour">6 óra</label><br>
-                        <input type="range" id="maxihour" name="maxi" min="6" max="8">
+                        <label id="maxilabel" for="maxihour" class="price">6 óra</label><br>
+                        <input type="range" id="maxihour" name="maxi" min="6" max="8" value="6">
+                        <p id="maxiprice" class="price card-text">89.900 Ft</p>
                     </div>
                 </div>
             </div>
