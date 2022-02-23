@@ -57,17 +57,23 @@ button:focus {
 
 #hero{
     height: 100vh;
-    background-image: url("hero2.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #hero h1{
     font-size: 5rem;
     padding: 0 0 1rem 0;
     text-transform: uppercase;
+    text-align: center;
+}
+
+#hero h2 a{
+  font-size: 2rem;
+  padding: 0 0 1rem 0;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
 }
 
 .parallax {
@@ -92,7 +98,7 @@ button:focus {
     font-style: italic;
     font-size: 1.5rem;
 }
-#hero h2{
+#hero #author{
     margin-top: 1em;
     text-align: right;
     width: 100%;
@@ -127,7 +133,7 @@ button:focus {
     background-position: center;
     background-size: cover;
     opacity: 0.5;
-    filter: grayscale(80%);
+    /*filter: grayscale(80%);*/
 }
 .carousel-inner p{
     font-size: 1.5em;
@@ -148,9 +154,40 @@ button:focus {
     font-size: 2em;
 }
 
-.price{
-    font-size: 1.8em;
+.card ul li p{
+  font-size: 1.2em;
 }
+
+.price{
+    font-size: 1.5em;
+}
+
+.bundleli{
+  font-size: 1.5em; 
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 input[type=range] {
     height: 36px;

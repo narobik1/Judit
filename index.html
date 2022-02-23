@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <title>Selfie Box</title>
 </head>
 
@@ -46,7 +49,8 @@
     </nav>
     <section id="hero" class=" d-flex justify-content-center align-items-center flex-column">
 
-        <h1>Selfie-Box</h1>
+        <h1>Selfie-Box By Jud</h1>
+        <h2><a href="https://www.instagram.com/explore/tags/selfieboxbyjud/">#selfieboxbyjud</a></h2>
         <hr id="line">
         <div class="container">
             <h3>
@@ -56,7 +60,7 @@
                 jövőbeni
                 változatára gondolunk, amint visszatekint erre az eseményre.<span class="quote">"</span>
             </h3>
-            <h2>
+            <h2 id="author">
                 Natasha Solomons
             </h2>
         </div>
@@ -72,35 +76,35 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="overlay-image" style="background-image: url(./carusel/pic1.jpg);"></div>
-                    <div class="container">
+                    <!-- <div class="container">
                         <p>Különös dolog a fénykép: mindig jelen időben van, mindenkit egyetlen pillanatban ábrázol, és
                             az a pillanat soha többé nem jön el. Az utókor számára készítjük, és miközben villan a zár,
                             önmagunk jövőbeni változatára gondolunk, amint visszatekint erre az eseményre.
 
                         </p>
                         <h1>Natasha Solomons</h1>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="carousel-item">
                     <div class="overlay-image" style="background-image: url(./carusel/pic2.jpg);"></div>
-                    <div class="container">
+                    <!-- <div class="container">
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius similique corporis soluta
                             rerum.
                         </p>
                         <h1>Lorem2, ipsum dolor.</h1>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="carousel-item">
                     <div class="overlay-image" style="background-image: url(./carusel/pic3.jpg);"></div>
-                    <div class="container">
+                    <!-- <div class="container">
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius similique corporis soluta
                             rerum.
                         </p>
                         <h1>Lorem3, ipsum dolor.</h1>
 
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -115,42 +119,63 @@
 
     </section>
 
-    <section id="csomagok" class="container my-5">
+    <section id="csomagok" class="container my-5 py-5">
 
-        <div class="row my-5">
-            <div class="col-sm-4 my-5">
-                <div class="card">
+        <div class="row">
+
+            <div class=" col-lg-4 my-3">
+                <div class="card card1">
                     <div class="card-body">
                         <h5 class="card-title">Mini csomag</h5>
-                        <p class="card-text">Korlátlan fotókészítés</p>
-                        <label id="minilabel" for="minihour" class="price">1 óra</label><br>
-                        <input type="range" id="minihour" name="mini" min="1" max="2" step="0.5" value="1">
-                        <p id="miniprice" class="price card-text">29.900 Ft</p>
+                        <ul class="ul1">
+                            <li class="card-text">
+                                <p> Korlátlan fotókészítés</p>
+                            </li>
+                        </ul>
+                        <p id="maxilabel" class="price">1 óra - 24.900 Ft</p>
+                        <p id="maxilabel" class="price">1.5 óra - 34.900 Ft</p>
+                        <p id="maxilabel" class="price">2 óra - 44.900 Ft</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 my-5">
-                <div class="card">
+            <div class=" col-lg-4 my-3">
+                <div class="card card2">
                     <div class="card-body">
                         <h5 class="card-title">Midi csomag</h5>
-                        <p class="card-text">Korlátlan fotókészítés, ajándék vendégkönyv</p>
-                        <label id="midilabel" for="midihour" class="price" >3 óra</label><br>
-                        <input type="range" id="midihour" name="midi" min="3" max="5" value="3">
-                        <p id="midiprice" class="price card-text">59.900 Ft</p>
+                        <ul class="ul2">
+                            <li class="card-text">
+                                <p> Korlátlan fotókészítés</p>
+                            </li>
+                            <li class="card-text">
+                                <p> Ajándék vendégkönyv</p>
+                            </li>
+                        </ul>
+                        <p id="maxilabel" class="price">3 óra - 59.900 Ft</p>
+                        <p id="maxilabel" class="price">4 óra - 69.900 Ft</p>
+                        <p id="maxilabel" class="price">5 óra - 79.900 Ft</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 my-5">
+            <div class=" col-lg-4 my-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Maxi csomag</h5>
-                        <p class="card-text">Korlátlan fotókészítés, ajándék vendégkönyv</p>
-                        <label id="maxilabel" for="maxihour" class="price">6 óra</label><br>
-                        <input type="range" id="maxihour" name="maxi" min="6" max="8" value="6">
-                        <p id="maxiprice" class="price card-text">89.900 Ft</p>
+                        <ul>
+                            <li class="card-text">
+                                <p> Korlátlan fotókészítés</p>
+                            </li>
+                            <li class="card-text">
+                                <p> Ajándék vendégkönyv</p>
+                            </li>
+                        </ul>
+                        <p id="maxilabel" class="price">6 óra - 89.900 Ft</p>
+                        <p id="maxilabel" class="price">7 óra - 99.900 Ft</p>
+                        <p id="maxilabel" class="price">8 óra - 119.900 Ft</p>
                     </div>
                 </div>
             </div>
+
+
         </div>
 
     </section>
