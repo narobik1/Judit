@@ -1,22 +1,24 @@
 
-$(document).ready(function() {
-    console.log("asd");
-    $(".card1").css({
-      'height': ($(".card2").height() + 'px')
-    });
-    $(".ul1").css({
-        'height': ($(".ul2").height() + 'px')
-      });
+$(document).ready(function () {
+  console.log("asd");
+  $(".card1").css({
+    'height': ($(".card2").height() + 'px')
   });
-
-  $( window ).resize(function() {
-    console.log("asd");
-    $(".card1").css({
-      'height': ($(".card2").height() + 'px')
-    });
+  $(".ul1").css({
+    'height': ($(".ul2").height() + 'px')
   });
+});
 
+$(window).resize(function () {
+  console.log("asd");
+  $(".card1").css({
+    'height': ($(".card2").height() + 'px')
+  });
+});
 
+$('.navbar-nav>li>a').on('click', function () {
+  $('.navbar-collapse').collapse('hide');
+});
 
 
 // let mini = ["29.900","39.900", "49.900"];
