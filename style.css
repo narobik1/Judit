@@ -114,7 +114,7 @@ button:focus {
 }
 
 /*---------------------------------------------------------------------------*/
-.carousel-item{
+.custcaritem{
     height: 36em;
     background: rgb(0, 0, 0);
     color: white;
@@ -316,4 +316,10 @@ color: black;
 
 #goodfor{
     overflow: hidden !important;
+}
+
+
+#hatterek a{
+    text-decoration: none;
+    color: black;
 }
