@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+  AOS.init();
   console.log("asd");
   $(".card1").css({
     'height': ($(".card2").height() + 'px')
@@ -19,6 +20,10 @@ $(window).resize(function () {
 $('.navbar-nav>li>a').on('click', function () {
   $('.navbar-collapse').collapse('hide');
 });
+
+var hely=document.getElementById("year");
+ev=new Date()
+hely.innerHTML=ev.getFullYear();
 
 
 // let mini = ["29.900","39.900", "49.900"];
