@@ -1,7 +1,6 @@
 
 $(document).ready(function () {
   AOS.init();
-  console.log("asd");
   $(".card1").css({
     'height': ($(".card2").height() + 'px')
   });
